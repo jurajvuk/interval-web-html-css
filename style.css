@@ -297,6 +297,94 @@ nav {
   .mySlides img {
       height: 600px;
   }
+
+  .poslovi {
+    overflow: hidden;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    border-top: 10px solid rgb(248, 152, 7);
+    border-bottom: 10px solid rgb(248, 152, 7);
+  }
+
+  .poslovi div {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+
+  .poslovi img {
+    position: relative;
+    height: 350px;
+    width: 100%;
+}
+
+.poslovi ul {
+    list-style-position: inside;
+}
+
+.lijevo {
+    position: relative;
+    -webkit-animation-name: lijevo;
+    -webkit-animation-duration: 1.5s;
+    animation-name: lijevo;
+    animation-duration: 1.5s;
+}
+
+.desno {
+    position: relative;
+    -webkit-animation-name: desno;
+    -webkit-animation-duration: 1.5s;
+    animation-name: desno;
+    animation-duration: 1.5s;
+}
+
+.partneri {
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.partneri-loga {
+    display: flex;
+    justify-content: space-around;
+}
+.partneri-loga img {
+    height: 100px;
+}
+
+.klijenti {
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.klijenti-loga {
+    display: flex;
+    justify-content: space-around;
+}
+.klijenti-loga img {
+    height: 100px;
+}
+
+  footer {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: linear-gradient(90deg, rgb(247, 255, 239) 0%, rgb(248, 186, 115) 35%, rgb(248, 152, 7) 50%);
+  }
   
   @-webkit-keyframes fade {
     from {opacity: .4} 
@@ -326,4 +414,28 @@ nav {
   @keyframes naslov {
     from {opacity: 0;} 
     to {opacity: 1;}
+  }
+
+  @-webkit-keyframes lijevo {
+    0%   {right: 500px;}
+    
+    100% {right: 0px;}
+  }
+  
+  @keyframes lijevo {
+    0%   {right: 500px;}
+    
+    100% {right: 0px;}
+  }
+
+  @-webkit-keyframes desno {
+    0%   {left: 500px;}
+    
+    100% {left: 0px;}
+  }
+  
+  @keyframes desno {
+    0%   {left: 500px;}
+    
+    100% {left: 0px;}
   }
