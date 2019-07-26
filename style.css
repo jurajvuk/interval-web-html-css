@@ -112,6 +112,8 @@ nav {
 
     .slideshow-container {
         max-width: 100%!important;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
     }
 
     .mySlides img {
@@ -141,6 +143,9 @@ nav {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
     }
+    .poslovi img {
+        height: 200px!important;
+    }
     .lijevo1 {
         grid-column: 1 / 3;
         padding: 10px;
@@ -156,6 +161,20 @@ nav {
     .desno2 {
         grid-column: 1 / 3;
         padding: 10px;
+    }
+    .partneri-loga {
+        flex-direction: column;
+        align-items: center;
+    }
+    .klijenti-loga {
+        flex-direction: column;
+        align-items: center;
+    }
+    .partneri-loga img {
+        width: 200px!important;
+    }
+    .klijenti-loga img {
+        width: 200px!important;
     }
 }
 
@@ -316,8 +335,32 @@ nav {
   }
 
   .mySlides img {
-      height: 600px;
+      height: 650px;
   }
+
+  .onama-pocetna {
+    width: 70%;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-top: 10px solid rgb(248, 152, 7);
+    padding-top: 20px;
+  }
+
+  .onama-pocetna a {
+    text-decoration: none;
+    color: rgb(247, 255, 239);
+    padding: 5px;
+    border: 1px solid rgb(248, 152, 7);
+    background-color: rgb(248, 186, 115);
+    border-radius: 5px;
+}
+
+.onama-pocetna a:hover {
+  background-color: rgb(248, 152, 7);
+  color: rgb(247, 255, 239);
+}
 
   .poslovi {
     overflow: hidden;
@@ -341,7 +384,7 @@ nav {
 
   .poslovi img {
     position: relative;
-    height: 350px;
+    height: 400px;
     width: 100%;
 }
 
