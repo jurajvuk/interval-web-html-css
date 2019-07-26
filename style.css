@@ -112,8 +112,8 @@ nav {
 
     .slideshow-container {
         max-width: 100%!important;
-        overflow: scroll;
-        -webkit-overflow-scrolling: touch;
+        touch-action: pan-left;
+        touch-action: pan-right;
     }
 
     .mySlides img {
