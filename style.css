@@ -136,6 +136,26 @@ nav {
     .text a {
         font-size: 10px!important;
     }
+    .poslovi {
+        width: 100%!important;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .lijevo1 {
+        grid-column: 1 / 3;
+        padding: 10px;
+    }
+    .lijevo2 {
+        grid-column: 1 / 3;
+    }
+    .desno1 {
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+    }
+    .desno2 {
+        grid-column: 1 / 3;
+        padding: 10px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -307,8 +327,8 @@ nav {
     font-family: 'Poppins', sans-serif;
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     border-top: 10px solid rgb(248, 152, 7);
     border-bottom: 10px solid rgb(248, 152, 7);
   }
@@ -328,19 +348,36 @@ nav {
     list-style-position: inside;
 }
 
-.lijevo {
+.lijevo1 {
     position: relative;
-    -webkit-animation-name: lijevo;
+    -webkit-animation-name: lijevo1;
     -webkit-animation-duration: 1.5s;
-    animation-name: lijevo;
+    animation-name: lijevo1;
     animation-duration: 1.5s;
 }
 
-.desno {
+.lijevo2 {
     position: relative;
-    -webkit-animation-name: desno;
+    -webkit-animation-name: lijevo2;
+    -webkit-animation-duration: 3.5s;
+    animation-name: lijevo2;
+    animation-duration: 3.5s;
+}
+
+
+.desno1 {
+    position: relative;
+    -webkit-animation-name: desno1;
+    -webkit-animation-duration: 3.5s;
+    animation-name: desno1;
+    animation-duration: 3.5s;
+}
+
+.desno2 {
+    position: relative;
+    -webkit-animation-name: desno2;
     -webkit-animation-duration: 1.5s;
-    animation-name: desno;
+    animation-name: desno2;
     animation-duration: 1.5s;
 }
 
@@ -416,25 +453,45 @@ nav {
     to {opacity: 1;}
   }
 
-  @-webkit-keyframes lijevo {
+  @-webkit-keyframes lijevo1 {
     0%   {right: 500px;}
     
     100% {right: 0px;}
   }
   
-  @keyframes lijevo {
+  @keyframes lijevo1 {
     0%   {right: 500px;}
     
     100% {right: 0px;}
   }
 
-  @-webkit-keyframes desno {
+  @-webkit-keyframes desno1 {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes desno1 {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+
+  @-webkit-keyframes lijevo2 {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes lijevo2 {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+
+  @-webkit-keyframes desno2 {
     0%   {left: 500px;}
     
     100% {left: 0px;}
   }
   
-  @keyframes desno {
+  @keyframes desno2 {
     0%   {left: 500px;}
     
     100% {left: 0px;}
