@@ -106,14 +106,16 @@
             <span class="dot" onclick="currentSlide(4)"></span> 
             <span class="dot" onclick="currentSlide(5)"></span> 
         </div>
-        
+        <hr class="onama-hr">
         <div class="onama-pocetna" id="reveal2">
+            
             <h1>O nama</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias fugit illum voluptatem minima quos iure quam aspernatur, delectus placeat provident labore a ad, ducimus sunt voluptatibus repellendus corrupti! Dolor, eveniet.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ipsa doloremque assumenda! Adipisci earum ea, quisquam tempora officia in accusantium velit ipsam ratione, excepturi animi corporis perferendis qui, quam aperiam.</p>
             <br>
             <a href="#">Saznaj više</a>
         </div>
+        <hr class="poslovi-hr-gornja">
         <div id="trigger2" class="spacer s0"></div>
         <div id="trigger1"></div>
         <div class="poslovi" id="reveal1">
@@ -147,6 +149,7 @@
                 </ul>
             </div>
         </div>
+        <hr class="poslovi-hr-donja">
         <div class="partneri">
             <h1>Naši partneri</h1>
             <div class="partneri-loga">
@@ -191,6 +194,16 @@
 						.setClassToggle("#reveal2", "visible") // add class toggle
 						.addIndicators() // add indicators (requires plugin)
                         .addTo(controller);
+
+        new ScrollMagic.Scene({
+							triggerElement: "#trigger2",
+							triggerHook: 0.9,
+							offset: 50, // move trigger to center of element
+							reverse: false // only do once
+						})
+						.setClassToggle(".onama-hr", "hr-animacija") // add class toggle
+						.addIndicators() // add indicators (requires plugin)
+                        .addTo(controller);
                         
         new ScrollMagic.Scene({
 							triggerElement: "#trigger1",
@@ -198,7 +211,57 @@
 							offset: 50, // move trigger to center of element
 							reverse: false // only do once
 						})
-						.setClassToggle("#reveal1", "visible") // add class toggle
+						.setClassToggle(".lijevo1", "lijevo1-animacija") // add class toggle
+						.addIndicators() // add indicators (requires plugin)
+                        .addTo(controller);
+                        
+        new ScrollMagic.Scene({
+							triggerElement: "#trigger1",
+							triggerHook: 0.5,
+							offset: 50, // move trigger to center of element
+							reverse: false // only do once
+						})
+						.setClassToggle(".desno1", "desno1-animacija") // add class toggle
+						.addIndicators() // add indicators (requires plugin)
+                        .addTo(controller);
+                        
+        new ScrollMagic.Scene({
+							triggerElement: "#trigger1",
+							triggerHook: 0.5,
+							offset: 50, // move trigger to center of element
+							reverse: false // only do once
+						})
+						.setClassToggle(".lijevo2", "lijevo2-animacija") // add class toggle
+						.addIndicators() // add indicators (requires plugin)
+                        .addTo(controller);
+                        
+        new ScrollMagic.Scene({
+							triggerElement: "#trigger1",
+							triggerHook: 0.5,
+							offset: 50, // move trigger to center of element
+							reverse: false // only do once
+						})
+						.setClassToggle(".desno2", "desno2-animacija") // add class toggle
+						.addIndicators() // add indicators (requires plugin)
+                        .addTo(controller);
+                        
+        new ScrollMagic.Scene({
+							triggerElement: "#trigger1",
+							triggerHook: 0.5,
+							offset: 50, // move trigger to center of element
+							reverse: false // only do once
+						})
+						.setClassToggle(".poslovi-hr-gornja", "poslovi-hr-gornja-animacija") // add class toggle
+						.addIndicators() // add indicators (requires plugin)
+                        .addTo(controller);
+        
+        new ScrollMagic.Scene({
+							triggerElement: ".desno2",
+							triggerHook: 0.5,
+							offset: 50, // move trigger to center of element
+							reverse: false // only do once
+						})
+						.setClassToggle(".poslovi-hr-donja", "poslovi-hr-donja-animacija") // add class toggle
 						.addIndicators() // add indicators (requires plugin)
 						.addTo(controller);
     </script>

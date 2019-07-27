@@ -343,10 +343,31 @@ nav {
     width: 70%;
     margin: auto;
     font-family: 'Poppins', sans-serif;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 40px;
-    border-top: 10px solid rgb(248, 152, 7);
-    padding-top: 20px;
+ }
+
+  .onama-hr {
+    height: 10px;
+    margin: auto;
+    background-color: rgb(248, 152, 7);
+    border: 0px;
+    margin-top: 40px;
+    width: 0%;
+    -webkit-transition: all 1s ease-in-out;
+            -moz-transition: all 1s ease-in-out;
+            -ms-transition: all 1s ease-in-out;
+                -o-transition: all 1s ease-in-out;
+                    transition: all 1s ease-in-out;
+  }
+
+  .hr-animacija {
+    width: 70%;
+    -webkit-transform: none;
+            -moz-transform: none;
+            -ms-transform: none;
+                -o-transform: none;
+                    transform: none;
   }
 
   .onama-pocetna a {
@@ -374,8 +395,7 @@ nav {
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    border-top: 10px solid rgb(248, 152, 7);
-    border-bottom: 10px solid rgb(248, 152, 7);
+    
   }
 
   .poslovi div {
@@ -459,6 +479,39 @@ nav {
     height: 100px;
 }
 
+.poslovi-hr-gornja {
+  width: 0%;
+  margin: auto;
+  height: 10px;
+  border: 0px;
+  background-color: rgb(248, 152, 7);
+  -webkit-transition: all 1s ease-in-out;
+         -moz-transition: all 1s ease-in-out;
+            -ms-transition: all 1s ease-in-out;
+             -o-transition: all 1s ease-in-out;
+                    transition: all 1s ease-in-out;
+}
+
+.poslovi-hr-gornja-animacija {
+  width: 70%;
+}
+
+.poslovi-hr-donja {
+  width: 0%;
+  margin: auto;
+  height: 10px;
+  border: 0px;
+  background-color: rgb(248, 152, 7);
+  -webkit-transition: all 1s ease-in-out;
+         -moz-transition: all 1s ease-in-out;
+            -ms-transition: all 1s ease-in-out;
+             -o-transition: all 1s ease-in-out;
+                    transition: all 1s ease-in-out;
+}
+
+.poslovi-hr-donja-animacija {
+  width: 70%;
+}
   footer {
       width: 100%;
       height: 100px;
@@ -498,89 +551,76 @@ nav {
     to {opacity: 1;}
   }
 
-  @-webkit-keyframes lijevo1 {
-    0%   {right: 500px;}
-    
-    100% {right: 0px;}
-  }
-  
-  @keyframes lijevo1 {
-    0%   {right: 500px;}
-    
-    100% {right: 0px;}
-  }
 
-  @-webkit-keyframes desno1 {
-    from {opacity: 0;} 
-    to {opacity: 1;}
-  }
   
-  @keyframes desno1 {
-    from {opacity: 0;} 
-    to {opacity: 1;}
-  }
-
-  @-webkit-keyframes lijevo2 {
-    from {opacity: 0;} 
-    to {opacity: 1;}
-  }
-  
-  @keyframes lijevo2 {
-    from {opacity: 0;} 
-    to {opacity: 1;}
-  }
-
-  @-webkit-keyframes desno2 {
-    0%   {left: 500px;}
-    
-    100% {left: 0px;}
-  }
-  
-  @keyframes desno2 {
-    0%   {left: 500px;}
-    
-    100% {left: 0px;}
-  }
-
   #reveal2 {
     opacity: 0;
-    -webkit-transform: rotate(40deg) scale(0.5);
-         -moz-transform: rotate(40deg) scale(0.5);
-            -ms-transform: rotate(40deg) scale(0.5);
-             -o-transform: rotate(40deg) scale(0.5);
-                    transform: rotate(40deg) scale(0.5);
-    -webkit-transition: all 0.8s ease-in-out;
-         -moz-transition: all 0.8s ease-in-out;
-            -ms-transition: all 0.8s ease-in-out;
-             -o-transition: all 0.8s ease-in-out;
-                    transition: all 0.8s ease-in-out;
+    
+    
+    -webkit-transition: all 1s ease-in-out;
+         -moz-transition: all 1s ease-in-out;
+            -ms-transition: all 1s ease-in-out;
+             -o-transition: all 1s ease-in-out;
+                    transition: all 1s ease-in-out;
+                    
+    
+
 }
 #reveal2.visible {
     opacity: 1;
+    
     -webkit-transform: none;
          -moz-transform: none;
             -ms-transform: none;
              -o-transform: none;
                     transform: none;
+   
 }
-#reveal1 {
-    opacity: 0;
-    -webkit-transform: rotate(40deg) scale(0.5);
-            -moz-transform: rotate(40deg) scale(0.5);
-            -ms-transform: rotate(40deg) scale(0.5);
-                -o-transform: rotate(40deg) scale(0.5);
-                    transform: rotate(40deg) scale(0.5);
-    -webkit-transition: all 0.8s ease-in-out;
-            -moz-transition: all 0.8s ease-in-out;
-            -ms-transition: all 0.8s ease-in-out;
-                -o-transition: all 0.8s ease-in-out;
-                    transition: all 0.8s ease-in-out;
+.lijevo1 {
+  right: 700px;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
-#reveal1.visible {
-    opacity: 1;
-    -webkit-transform: none;
-            -moz-transform: none;
-            -ms-transform: none;
-                -o-transform: none;
-                    transform: none;
+.lijevo1-animacija {
+  right: 0px;
 }
+
+.lijevo2 {
+  opacity: 0;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.lijevo2-animacija {
+  opacity: 1;
+}
+
+.desno1 {
+  opacity: 0;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.desno1-animacija {
+  opacity: 1;
+}
+
+.desno2 {
+  left: 800px;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.desno2-animacija {
+  left: 0px;
+}
+
